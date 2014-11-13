@@ -12,10 +12,10 @@ set -e
 
 # Feel free to change any of the following variables for your app:
 TIMEOUT=${TIMEOUT-60}
-APP_ROOT=/home/dev/apps/rfid/current
+APP_ROOT=/home/dev/apps/rfidlock/current
 PID=$APP_ROOT/tmp/pids/unicorn.pid
 CMD="cd $APP_ROOT; bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
-AS_USER=username
+AS_USER=dev
 set -u
 
 OLD_PIN="$PID.oldbin"
