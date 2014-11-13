@@ -1172,3 +1172,10 @@ I, [2014-11-13T11:36:52.432007 #32005]  INFO -- :   Rendered layouts/_navigation
 I, [2014-11-13T11:36:52.432101 #32005]  INFO -- :   Rendered layouts/_navigation.html.erb (0.5ms)
 I, [2014-11-13T11:36:52.432276 #32005]  INFO -- :   Rendered layouts/_messages.html.erb (0.1ms)
 I, [2014-11-13T11:36:52.432529 #32005]  INFO -- : Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+I, [2014-11-13T13:38:03.836663 #32005]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 13:38:03 +0500
+I, [2014-11-13T13:38:03.837670 #32005]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T13:38:03.843690 #32005]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+I, [2014-11-13T13:38:03.845491 #32005]  INFO -- :   Rendered layouts/_navigation_links.html.erb (0.1ms)
+I, [2014-11-13T13:38:03.845669 #32005]  INFO -- :   Rendered layouts/_navigation.html.erb (0.8ms)
+I, [2014-11-13T13:38:03.845914 #32005]  INFO -- :   Rendered layouts/_messages.html.erb (0.1ms)
+I, [2014-11-13T13:38:03.846186 #32005]  INFO -- : Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
