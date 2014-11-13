@@ -17,7 +17,7 @@ gem 'bootstrap_form'
 gem 'rails_layout'
 gem 'capistrano'
 gem 'rvm-capistrano'
-
+gem 'pg'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
