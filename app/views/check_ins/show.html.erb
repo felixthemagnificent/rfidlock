@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Card user:</strong>
+  <%= @check_in.card_user %>
+</p>
+
+<p>
+  <strong>Readerserial:</strong>
+  <%= @check_in.readerSerial %>
+</p>
+
+<%= link_to 'Edit', edit_check_in_path(@check_in) %> |
+<%= link_to 'Back', check_ins_path %>

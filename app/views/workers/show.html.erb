@@ -1,0 +1,18 @@
+
+<div class="container">
+<H1>Employee</H1>
+<p>
+  <H4>Card:
+  <%= unless @worker.nil? then @worker.card end%></h4>
+</p>
+
+<p>
+  <h4>Name:
+    <%= unless @worker.nil? then @worker.username end%></h4>
+</p>
+  <div class="btn-group">
+    <%= link_to '← Back', workers_path, class: "btn btn-default" %>
+    <%= unless @worker.nil? then link_to ' Edit ', edit_worker_path(@worker), class: "btn btn-default" end %>
+
+  </div>
+</div>

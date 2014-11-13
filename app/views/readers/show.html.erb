@@ -1,0 +1,19 @@
+
+
+<div class="container">
+  <H1>Reader</H1>
+  <p>
+  <H4>Location:
+    <%= @reader.desc %></h4>
+  </p>
+
+  <p>
+  <h4>S/N:
+    <%= @reader.serial %></h4>
+  </p>
+  <div class="btn-group">
+    <%= link_to '← Back', readers_path, class: "btn btn-default" %>
+    <%= link_to ' Edit ', edit_reader_path(@reader), class: "btn btn-default" %>
+
+  </div>
+</div>

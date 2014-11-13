@@ -1,0 +1,30 @@
+<h1>Readers</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Serial number</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @readers.each do |reader| %>
+      <tr>
+        <td><%= reader.desc %></td>
+        <td><%= reader.serial %></td>
+        <td>
+          <div class="btn-group">
+            <%= link_to 'Edit', edit_reader_path(reader), class: "btn btn-default glyphicon glyphicon-pencil btn-sm"  %>
+            <%= link_to 'Destroy', reader, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default glyphicon glyphicon-trash btn-sm"%>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New reader', new_reader_path,class:"btn btn-default" %>

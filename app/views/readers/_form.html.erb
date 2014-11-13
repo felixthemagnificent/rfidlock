@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-6">
+  <%= bootstrap_form_for(@reader) do |f| %>
+
+    <%= f.text_field :desc , label: "Location of reader", placeholder: "Enter the location"%>
+    <%= f.text_field :serial, label: "Serial number of reader", placeholder: "S/N" %>
+      <%= f.form_group do %>
+          <div class="btn-group">
+            <%= link_to '← Back', workers_path, class: "btn btn-default" %>
+            <%= f.submit "Update" %>
+          </div>
+      <% end %>
+
+<% end %>
+</div>
+</div>

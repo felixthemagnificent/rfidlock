@@ -1,0 +1,28 @@
+<h1>Employees</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Card serial</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @workers.each do |worker| %>
+      <tr>
+        <td><%= worker.username %></td>
+        <td><%= worker.card %></td>
+        <td>
+        <%= link_to ' Edit', edit_worker_path(worker), class: "btn btn-default glyphicon glyphicon-pencil btn-sm"  %>
+        <%= link_to ' Destroy', worker, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default btn-sm glyphicon glyphicon-trash"  %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Add employee', new_worker_path, class: "btn btn-default "  %>

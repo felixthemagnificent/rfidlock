@@ -1,0 +1,30 @@
+<h1>Listing permissions</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Reader</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @permissions.each do |permission| %>
+      <tr>
+        <td><%= permission[:user].username %></td>
+        <td><%= permission[:location].desc %></td>
+        <td>
+          <div class="btn-group">
+            <%= link_to 'Edit', edit_permission_path(permission[:permission]), class: "btn btn-default glyphicon glyphicon-pencil btn-sm"  %>
+            <%= link_to 'Destroy', permission[:permission], method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default glyphicon glyphicon-trash btn-sm"  %>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Permission', new_permission_path,class:"btn btn-default"  %>

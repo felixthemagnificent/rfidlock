@@ -1,0 +1,18 @@
+<div class="container">
+  <H1>Permission</H1>
+  <p>
+  <H4>User:
+    <%= @workers.find(@permission.user_id).username  %></h4>
+  </p>
+
+  <p>
+  <h4>Location:
+    <%= @readers.find(@permission.reader_id).desc %></h4>
+  </p>
+
+<div class="btn-group">
+  <%= link_to '← Back', permissions_path, class: "btn btn-default" %>
+  <%= link_to ' Edit ', edit_permission_path(@permission), class: "btn btn-default" %>
+
+</div>
+</div>
