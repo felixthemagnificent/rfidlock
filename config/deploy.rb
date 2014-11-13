@@ -8,7 +8,7 @@ set :user, "dev"
 set :port, 22
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
-set :use_sudo, true
+set :use_sudo, false
 
 set :scm, "git"
 set :repository, "git@github.com:felixthemagnificent/#{application}.git"
