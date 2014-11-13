@@ -1179,3 +1179,119 @@ I, [2014-11-13T13:38:03.845491 #32005]  INFO -- :   Rendered layouts/_navigation
 I, [2014-11-13T13:38:03.845669 #32005]  INFO -- :   Rendered layouts/_navigation.html.erb (0.8ms)
 I, [2014-11-13T13:38:03.845914 #32005]  INFO -- :   Rendered layouts/_messages.html.erb (0.1ms)
 I, [2014-11-13T13:38:03.846186 #32005]  INFO -- : Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T18:10:04.985690 #2034]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 18:10:04 +0500
+I, [2014-11-13T18:10:04.996218 #2034]  INFO -- : Processing by CheckInsController#index as HTML
+I, [2014-11-13T18:10:05.006319 #2034]  INFO -- : Completed 401 Unauthorized in 10ms
+I, [2014-11-13T18:10:05.023065 #2034]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 18:10:05 +0500
+I, [2014-11-13T18:10:05.026238 #2034]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T18:10:05.043460 #2034]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+I, [2014-11-13T18:10:05.049286 #2034]  INFO -- :   Rendered layouts/_navigation_links.html.erb (0.9ms)
+I, [2014-11-13T18:10:05.049477 #2034]  INFO -- :   Rendered layouts/_navigation.html.erb (2.9ms)
+I, [2014-11-13T18:10:05.051186 #2034]  INFO -- :   Rendered layouts/_messages.html.erb (0.8ms)
+I, [2014-11-13T18:10:05.051662 #2034]  INFO -- : Completed 200 OK in 25ms (Views: 14.6ms | ActiveRecord: 0.6ms)
+I, [2014-11-13T18:10:06.229409 #2034]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 18:10:06 +0500
+I, [2014-11-13T18:10:06.230212 #2034]  INFO -- : Processing by CheckInsController#index as HTML
+I, [2014-11-13T18:10:06.230801 #2034]  INFO -- : Completed 401 Unauthorized in 0ms
+I, [2014-11-13T18:10:06.236435 #2034]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 18:10:06 +0500
+I, [2014-11-13T18:10:06.237232 #2034]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T18:10:06.240138 #2034]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+I, [2014-11-13T18:10:06.241024 #2034]  INFO -- :   Rendered layouts/_navigation_links.html.erb (0.1ms)
+I, [2014-11-13T18:10:06.241119 #2034]  INFO -- :   Rendered layouts/_navigation.html.erb (0.5ms)
+I, [2014-11-13T18:10:06.241299 #2034]  INFO -- :   Rendered layouts/_messages.html.erb (0.1ms)
+I, [2014-11-13T18:10:06.241522 #2034]  INFO -- : Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T18:10:14.155281 #2034]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-13 18:10:14 +0500
+I, [2014-11-13T18:10:14.156667 #2034]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2014-11-13T18:10:14.157042 #2034]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jz83Nhfhh60McGMyOCz7qKDCVDl/H3q+GHpyzXMEMC8=", "user"=>{"email"=>"felix@felix.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2014-11-13T18:10:14.241023 #2034]  INFO -- : Redirected to http://localhost:8080/
+I, [2014-11-13T18:10:14.241194 #2034]  INFO -- : Completed 302 Found in 84ms (ActiveRecord: 3.4ms)
+I, [2014-11-13T18:10:14.246722 #2034]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 18:10:14 +0500
+I, [2014-11-13T18:10:14.247496 #2034]  INFO -- : Processing by CheckInsController#index as HTML
+I, [2014-11-13T18:10:14.252084 #2034]  INFO -- :   Rendered check_ins/index.html.erb within layouts/application (0.7ms)
+I, [2014-11-13T18:10:14.252278 #2034]  INFO -- : Completed 500 Internal Server Error in 5ms
+F, [2014-11-13T18:10:14.254509 #2034] FATAL -- : 
+SyntaxError (/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_then
+...onse[:location].first.id)? then 'success' else 'danger' end)...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_else, expecting ')'
+....first.id)? then 'success' else 'danger' end);@output_buffer...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+...hen 'success' else 'danger' end);@output_buffer.safe_append=...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_then
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_else, expecting ')'
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+  app/views/check_ins/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/views/check_ins/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/check_ins/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/check_ins_controller.rb:23:in `index'
+
+
+I, [2014-11-13T18:10:38.611859 #2034]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 18:10:38 +0500
+I, [2014-11-13T18:10:38.612595 #2034]  INFO -- : Processing by CheckInsController#index as HTML
+I, [2014-11-13T18:10:38.614942 #2034]  INFO -- :   Rendered check_ins/index.html.erb within layouts/application (0.6ms)
+I, [2014-11-13T18:10:38.615138 #2034]  INFO -- : Completed 500 Internal Server Error in 2ms
+F, [2014-11-13T18:10:38.617213 #2034] FATAL -- : 
+SyntaxError (/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_then
+...onse[:location].first.id)? then 'success' else 'danger' end)...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_else, expecting ')'
+....first.id)? then 'success' else 'danger' end);@output_buffer...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+...hen 'success' else 'danger' end);@output_buffer.safe_append=...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_then
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_else, expecting ')'
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+  app/views/check_ins/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/views/check_ins/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/check_ins/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/check_ins_controller.rb:23:in `index'
+
+
+I, [2014-11-13T18:10:58.791134 #2034]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 18:10:58 +0500
+I, [2014-11-13T18:10:58.792163 #2034]  INFO -- : Processing by CheckInsController#index as HTML
+I, [2014-11-13T18:10:58.795152 #2034]  INFO -- :   Rendered check_ins/index.html.erb within layouts/application (0.5ms)
+I, [2014-11-13T18:10:58.795365 #2034]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2014-11-13T18:10:58.797293 #2034] FATAL -- : 
+SyntaxError (/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_then
+...onse[:location].first.id)? then 'success' else 'danger' end)...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_else, expecting ')'
+....first.id)? then 'success' else 'danger' end);@output_buffer...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+...hen 'success' else 'danger' end);@output_buffer.safe_append=...
+...                               ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_then
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_else, expecting ')'
+  app/views/check_ins/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+  app/views/check_ins/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/views/check_ins/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/check_ins/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/check_ins_controller.rb:23:in `index'
+
+
+I, [2014-11-13T18:11:19.355877 #2210]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 18:11:19 +0500
+I, [2014-11-13T18:11:19.366044 #2210]  INFO -- : Processing by CheckInsController#index as HTML
+I, [2014-11-13T18:11:19.386889 #2210]  INFO -- :   Rendered check_ins/index.html.erb within layouts/application (0.8ms)
+I, [2014-11-13T18:11:19.390085 #2210]  INFO -- :   Rendered layouts/_navigation_links.html.erb (0.5ms)
+I, [2014-11-13T18:11:19.390199 #2210]  INFO -- :   Rendered layouts/_navigation.html.erb (1.8ms)
+I, [2014-11-13T18:11:19.391149 #2210]  INFO -- :   Rendered layouts/_messages.html.erb (0.5ms)
+I, [2014-11-13T18:11:19.391476 #2210]  INFO -- : Completed 200 OK in 25ms (Views: 7.5ms | ActiveRecord: 0.9ms)
