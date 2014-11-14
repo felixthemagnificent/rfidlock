@@ -44,7 +44,7 @@ class PermissionsController < ApplicationController
       tmp = Array.new
       tmp.push(rdr.desc)
       tmp.push(rdr.id)
-      if wrk.customer == current_user.id
+      if rdr.customer == current_user.id
         @readers.push(tmp)
       end
     }

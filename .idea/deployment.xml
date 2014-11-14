@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="188.120.245.112" uploadOnCheckin="129d6df7-723e-4951-bbdf-1ebd64720a3c">
+  <component name="PublishConfigData" serverName="188.120.245.112" uploadOnCheckin="129d6df7-723e-4951-bbdf-1ebd64720a3c">
     <serverData>
       <paths name="188.120.245.112">
         <serverdata>
@@ -11,7 +11,6 @@
       </paths>
     </serverData>
     <option name="myUploadOnCheckinName" value="188.120.245.112" />
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
 
