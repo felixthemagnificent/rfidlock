@@ -3,4 +3,13 @@
   <data-source source="LOCAL" name="Rails rails-rfid: development" uuid="90d8fd3e-aa43-41dd-a87c-6a1be9baf0e9">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails rails-rfid: production" uuid="9ca52874-37e6-4e61-94ef-51606ff00722">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails rails-rfid: default" uuid="cb7eb277-5413-4e60-b716-41adbf4def0a">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails rails-rfid: test" uuid="3fc3ab4a-9fde-4576-a03b-9f2103845464">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

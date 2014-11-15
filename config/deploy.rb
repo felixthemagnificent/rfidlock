@@ -5,6 +5,7 @@ server "188.120.245.112", :web, :app, :db, primary: true
 
 set :application, "rfidlock"
 set :user, "dev"
+set :password, "123"
 set :port, 22
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache

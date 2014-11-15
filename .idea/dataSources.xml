@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2933725580">
+  <component name="DataSourceManagerImpl" format="xml" hash="1449246308">
     <data-source source="LOCAL" name="Rails rails-rfid: development" uuid="90d8fd3e-aa43-41dd-a87c-6a1be9baf0e9">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
@@ -9,8 +9,26 @@
     </data-source>
     <data-source source="LOCAL" name="Rails rails-rfid: production" uuid="9ca52874-37e6-4e61-94ef-51606ff00722">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/production.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/rfidlock_development</jdbc-url>
+      <user-name>dev</user-name>
+      <user-password>dfccdfcfdfcfdfc6dfdedfc2dfcfdfdadfc5dfdddfcfdfd8</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails rails-rfid: default" uuid="cb7eb277-5413-4e60-b716-41adbf4def0a">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/&lt;project_name&gt;_development</jdbc-url>
+      <user-name>&lt;user&gt;</user-name>
+      <user-password>df96dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf94</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails rails-rfid: test" uuid="3fc3ab4a-9fde-4576-a03b-9f2103845464">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/db/test.sqlite3</jdbc-url>
+      <user-name>&lt;user&gt;</user-name>
+      <user-password>df96dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf94</user-password>
       <libraries />
     </data-source>
   </component>
