@@ -24,7 +24,7 @@ production:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: rfidlock_development
+  database: rfidlock_production
   pool: 5
   username: dev
   password: feelthepower
