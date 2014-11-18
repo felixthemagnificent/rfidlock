@@ -11,10 +11,10 @@
 
   <tbody>
     <% @resp.each do |response| %>
-      <tr class="<%= unless response[:name].nil? && response[:location].nil? then unless Permission.where(:user_id => response[:name].first.id, :reader_id => response[:location].first.id).nil? then 'success' else 'danger' end end%>">
-        <td><%= unless response[:name].blank? then response[:name].first.username else 'Unknown' end%>
+      <tr class="<%= response[:style] %>">
+        <td><%= response[:name] %>
         </td>
-        <td><%= unless response[:location].blank? then response[:location].first.desc else 'Unknown location' end%></td>
+        <td><%= response[:location] %></td>
         <td><%= response[:time].to_time.strftime("%H:%M:%S, %A, %d-%m-%Y") %></td>
       </tr>
     <% end %>

@@ -10,10 +10,37 @@ class CheckInsController < ApplicationController
     check_ins.each { |checkin|
       ss = Hash.new
       username = checkin.card_user
-      ss[:name] = Worker.where(card: username)
-      ss[:location] = Reader.where(serial: checkin.readerSerial)
+      uname = Worker.where(card: username)
+      if not uname.nil? || uname.empty?
+        ss[:name] = uname.first.username
+      else
+        ss[:name] = 'Unknown'
+      end
+
+      ulocation =  Reader.where(serial: checkin.readerSerial)
+      if not ulocation.empty? || ulocation.nil?
+        ss[:location] = ulocation.first.desc
+      else
+        ss[:location] = 'Unregistered reader'
+      end
       ss[:time] = checkin.created_at
-      if ss[:location].first.customer == current_user.id
+      ss[:style] = 'danger'
+      perm = nil
+      unless ulocation.empty? || ulocation.nil?
+
+        unless uname.empty? || uname.nil?
+        perm = Permission.where(reader_id: ulocation.first.id, user_id: uname.first.id)
+        unless perm.nil? || perm.empty?
+          ss[:style] = 'success'
+        else if not uname.empty?
+          ss[:style] = 'warning'
+          end
+        end
+        end
+
+      end
+
+      if ulocation.first.customer == current_user.id
         @resp.push(ss)
       end
 

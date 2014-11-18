@@ -23217,3 +23217,1318 @@ Processing by CheckInsController#index as HTML
   Rendered layouts/_navigation.html.erb (1.2ms)
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 169ms (Views: 165.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-18 18:54:09 +0500
+
+Mysql2::Error - Can't connect to MySQL server on '91.239.26.200' (60):
+  mysql2 (0.3.17) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.7) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/f6112f7fe0ebfd62/variables" for 127.0.0.1 at 2014-11-18 18:54:17 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-18 19:01:36 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (188.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CheckInsController#index as HTML
+Completed 401 Unauthorized in 15ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-18 19:01:39 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (24.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (3.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 1714ms (Views: 1387.0ms | ActiveRecord: 314.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-18 19:02:19 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"komEnF0678qY59EiPXndUM1sws2WvrtzrdRqcOkb8YA=", "user"=>{"email"=>"felix@felix.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (104.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'felix@felix.ru'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (102.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (103.7ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2014-11-18 14:02:19', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 2, `updated_at` = '2014-11-18 14:02:19' WHERE `users`.`id` = 1
+  [1m[36m (113.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 527ms (ActiveRecord: 423.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-18 19:02:19 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (112.7ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (104.9ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35mReader Load (131.8ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mWorker Load (102.4ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36mWorker Load (103.0ms)[0m  [1mSELECT `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35mReader Load (106.0ms)[0m  SELECT `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mWorker Load (103.8ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmthi'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  Rendered check_ins/index.html.erb within layouts/application (746.6ms)
+Completed 500 Internal Server Error in 1777ms
+
+NoMethodError - undefined method `id' for nil:NilClass:
+   () Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14:in `block in _app_views_check_ins_index_html_erb__76409911864055438_70159865674820'
+   () Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:13:in `_app_views_check_ins_index_html_erb__76409911864055438_70159865674820'
+  actionview (4.1.7) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/responder.rb:238:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/responder.rb:165:in `to_html'
+  actionpack (4.1.7) lib/action_controller/metal/responder.rb:158:in `respond'
+  actionpack (4.1.7) lib/action_controller/metal/responder.rb:151:in `call'
+  actionpack (4.1.7) lib/action_controller/metal/mime_responds.rb:400:in `respond_with'
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:23:in `index'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/5d09ece268d854a5/variables" for 127.0.0.1 at 2014-11-18 19:02:21 +0500
+  [1m[35mWorker Load (103.0ms)[0m  SELECT `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  [1m[36mReader Load (104.1ms)[0m  [1mSELECT `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+
+
+Started POST "/__better_errors/5d09ece268d854a5/eval" for 127.0.0.1 at 2014-11-18 19:02:43 +0500
+
+
+Started POST "/__better_errors/5d09ece268d854a5/eval" for 127.0.0.1 at 2014-11-18 19:02:44 +0500
+
+
+Started POST "/__better_errors/5d09ece268d854a5/eval" for 127.0.0.1 at 2014-11-18 19:03:00 +0500
+
+
+Started POST "/__better_errors/5d09ece268d854a5/eval" for 127.0.0.1 at 2014-11-18 19:03:08 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-18 19:06:08 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (114.7ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (106.4ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35mReader Load (125.5ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mWorker Load (104.5ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36mWorker Load (104.9ms)[0m  [1mSELECT `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35mReader Load (104.3ms)[0m  SELECT `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mWorker Load (103.3ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmthi'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  Rendered check_ins/index.html.erb within layouts/application (632.3ms)
+Completed 500 Internal Server Error in 1198ms
+
+NoMethodError - undefined method `id' for nil:NilClass:
+   () Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:14:in `block in _app_views_check_ins_index_html_erb__76409911864055438_70159867274140'
+   () Users/felix/rails/rails-rfid/app/views/check_ins/index.html.erb:13:in `_app_views_check_ins_index_html_erb__76409911864055438_70159867274140'
+  actionview (4.1.7) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/responder.rb:238:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/responder.rb:165:in `to_html'
+  actionpack (4.1.7) lib/action_controller/metal/responder.rb:158:in `respond'
+  actionpack (4.1.7) lib/action_controller/metal/responder.rb:151:in `call'
+  actionpack (4.1.7) lib/action_controller/metal/mime_responds.rb:400:in `respond_with'
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:23:in `index'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2167da31ac2acb1f/variables" for 127.0.0.1 at 2014-11-18 19:06:10 +0500
+  [1m[35mWorker Load (106.5ms)[0m  SELECT `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  [1m[36mReader Load (105.4ms)[0m  [1mSELECT `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-18 22:04:27 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (77.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (72.5ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35m (73.3ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mWorker Load (73.6ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  [1m[35m (74.6ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mReader Load (72.4ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+Completed 500 Internal Server Error in 1444ms
+
+NoMethodError - undefined method `customer' for "L":String:
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:40:in `block in index'
+  activerecord (4.1.7) lib/active_record/relation/delegation.rb:46:in `each'
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:10:in `index'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/c172e845fa39e12f/variables" for 127.0.0.1 at 2014-11-18 22:04:54 +0500
+  [1m[35mWorker Load (89.4ms)[0m  SELECT `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mReader Load (89.4ms)[0m  [1mSELECT `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mPermission Load (96.7ms)[0m  SELECT `permissions`.* FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 1
+
+
+Started POST "/__better_errors/c172e845fa39e12f/variables" for 127.0.0.1 at 2014-11-18 22:05:22 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-18 22:06:09 +0500
+Processing by CheckInsController#index as HTML
+  [1m[36mUser Load (82.8ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCheckIn Load (73.7ms)[0m  SELECT `check_ins`.* FROM `check_ins`
+  [1m[36m (74.8ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35mWorker Load (76.4ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36m (73.5ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mReader Load (73.0ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36m (73.7ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  Rendered check_ins/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1635ms (Views: 182.2ms | ActiveRecord: 1402.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-18 22:06:46 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (71.9ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (73.9ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35m (112.8ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mWorker Load (103.8ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  [1m[35m (71.9ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mReader Load (76.9ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35m (73.2ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  Rendered check_ins/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 1733ms (Views: 157.6ms | ActiveRecord: 1527.5ms)
+
+
+Started GET "/permissions" for 127.0.0.1 at 2014-11-18 22:06:53 +0500
+Processing by PermissionsController#index as HTML
+  [1m[36mUser Load (83.7ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPermission Load (74.7ms)[0m  SELECT `permissions`.* FROM `permissions`
+  Rendered permissions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 326ms (Views: 163.8ms | ActiveRecord: 158.4ms)
+
+
+Started GET "/workers" for 127.0.0.1 at 2014-11-18 22:06:57 +0500
+Processing by WorkersController#index as HTML
+  [1m[36mUser Load (87.7ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mWorker Load (87.4ms)[0m  SELECT `workers`.* FROM `workers`  WHERE `workers`.`customer` = 1
+  Rendered workers/index.html.erb within layouts/application (90.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 344ms (Views: 166.6ms | ActiveRecord: 175.1ms)
+
+
+Started GET "/readers" for 127.0.0.1 at 2014-11-18 22:06:59 +0500
+Processing by ReadersController#index as HTML
+  [1m[36mUser Load (89.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mReader Load (91.4ms)[0m  SELECT `readers`.* FROM `readers`  WHERE `readers`.`customer` = 1
+  Rendered readers/index.html.erb within layouts/application (94.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 349ms (Views: 166.2ms | ActiveRecord: 180.8ms)
+
+
+Started GET "/readers" for 127.0.0.1 at 2014-11-18 22:08:24 +0500
+Processing by ReadersController#index as HTML
+  [1m[36mUser Load (72.7ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mReader Load (72.9ms)[0m  SELECT `readers`.* FROM `readers`  WHERE `readers`.`customer` = 1
+  Rendered readers/index.html.erb within layouts/application (299.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 782ms (Views: 180.2ms | ActiveRecord: 586.7ms)
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:08:29 +0500
+
+SyntaxError - syntax error, unexpected '}', expecting keyword_end
+/Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:91: syntax error, unexpected keyword_end, expecting '}':
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:47:in `'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:08:29 +0500
+
+SyntaxError - syntax error, unexpected '}', expecting keyword_end
+/Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:91: syntax error, unexpected keyword_end, expecting '}':
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:47:in `'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/6b907e326e364673/variables" for 127.0.0.1 at 2014-11-18 22:08:29 +0500
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:08:39 +0500
+
+SyntaxError - syntax error, unexpected keyword_end, expecting '}':
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:91:in `'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/ee7807d40db5fa51/variables" for 127.0.0.1 at 2014-11-18 22:08:39 +0500
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:09:07 +0500
+Processing by CheckInsController#index as HTML
+  [1m[36mUser Load (72.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCheckIn Load (72.9ms)[0m  SELECT `check_ins`.* FROM `check_ins`
+  [1m[36m (75.1ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35mWorker Load (71.8ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36m (124.8ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mReader Load (123.8ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36m (72.5ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  Rendered check_ins/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 1789ms (Views: 186.4ms | ActiveRecord: 1563.8ms)
+
+
+Started GET "/permissions" for 127.0.0.1 at 2014-11-18 22:09:18 +0500
+Processing by PermissionsController#index as HTML
+  [1m[35mUser Load (71.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPermission Load (71.8ms)[0m  [1mSELECT `permissions`.* FROM `permissions`[0m
+  Rendered permissions/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 296ms (Views: 150.4ms | ActiveRecord: 143.3ms)
+
+
+Started GET "/workers" for 127.0.0.1 at 2014-11-18 22:09:19 +0500
+Processing by WorkersController#index as HTML
+  [1m[35mUser Load (392.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mWorker Load (91.5ms)[0m  [1mSELECT `workers`.* FROM `workers`  WHERE `workers`.`customer` = 1[0m
+  Rendered workers/index.html.erb within layouts/application (93.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 653ms (Views: 163.4ms | ActiveRecord: 483.8ms)
+
+
+Started GET "/readers" for 127.0.0.1 at 2014-11-18 22:09:20 +0500
+Processing by ReadersController#index as HTML
+  [1m[35mUser Load (75.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReader Load (73.3ms)[0m  [1mSELECT `readers`.* FROM `readers`  WHERE `readers`.`customer` = 1[0m
+  Rendered readers/index.html.erb within layouts/application (75.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 304ms (Views: 153.6ms | ActiveRecord: 148.6ms)
+
+
+Started GET "/permissions" for 127.0.0.1 at 2014-11-18 22:09:21 +0500
+Processing by PermissionsController#index as HTML
+  [1m[35mUser Load (94.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPermission Load (88.8ms)[0m  [1mSELECT `permissions`.* FROM `permissions`[0m
+  Rendered permissions/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 336ms (Views: 151.1ms | ActiveRecord: 182.8ms)
+
+
+Started GET "/permissions" for 127.0.0.1 at 2014-11-18 22:09:27 +0500
+Processing by PermissionsController#index as HTML
+  [1m[35mUser Load (73.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPermission Load (71.1ms)[0m  [1mSELECT `permissions`.* FROM `permissions`[0m
+  Rendered permissions/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 549ms (Views: 165.3ms | ActiveRecord: 367.2ms)
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:09:31 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (88.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (73.5ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35m (131.7ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mWorker Load (148.0ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  [1m[35m (71.8ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mReader Load (73.4ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+Completed 500 Internal Server Error in 1344ms
+
+NameError - undefined local variable or method `permd' for #<CheckInsController:0x007f9ebb52f150>:
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:33:in `block in index'
+  activerecord (4.1.7) lib/active_record/relation/delegation.rb:46:in `each'
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:10:in `index'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:09:33 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (88.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (87.0ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35m (87.2ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mWorker Load (87.7ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  [1m[35m (103.7ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mReader Load (88.1ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+Completed 500 Internal Server Error in 554ms
+
+NameError - undefined local variable or method `permd' for #<CheckInsController:0x007f9ebbf44870>:
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:33:in `block in index'
+  activerecord (4.1.7) lib/active_record/relation/delegation.rb:46:in `each'
+   () Users/felix/rails/rails-rfid/app/controllers/check_ins_controller.rb:10:in `index'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/felix/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/ff4c8cf029841ea3/variables" for 127.0.0.1 at 2014-11-18 22:09:33 +0500
+  [1m[35mWorker Load (98.4ms)[0m  SELECT `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mReader Load (71.5ms)[0m  [1mSELECT `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mPermission Load (71.8ms)[0m  SELECT `permissions`.* FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 1
+
+
+Started POST "/__better_errors/ff4c8cf029841ea3/eval" for 127.0.0.1 at 2014-11-18 22:09:37 +0500
+
+
+Started POST "/__better_errors/ff4c8cf029841ea3/eval" for 127.0.0.1 at 2014-11-18 22:09:43 +0500
+
+
+Started POST "/__better_errors/ff4c8cf029841ea3/eval" for 127.0.0.1 at 2014-11-18 22:09:47 +0500
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:10:36 +0500
+Processing by CheckInsController#index as HTML
+  [1m[36mUser Load (160.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCheckIn Load (424.4ms)[0m  SELECT `check_ins`.* FROM `check_ins`
+  [1m[36m (420.6ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35mWorker Load (178.0ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36m (409.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mReader Load (408.9ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36m (207.8ms)[0m  [1mSELECT COUNT(*) FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36m (404.5ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  Rendered check_ins/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 8599ms (Views: 148.7ms | ActiveRecord: 8407.9ms)
+
+
+Started GET "/workers" for 127.0.0.1 at 2014-11-18 22:10:54 +0500
+Processing by WorkersController#index as HTML
+  [1m[35mUser Load (95.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mWorker Load (89.8ms)[0m  [1mSELECT `workers`.* FROM `workers`  WHERE `workers`.`customer` = 1[0m
+  Rendered workers/index.html.erb within layouts/application (91.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 342ms (Views: 155.1ms | ActiveRecord: 184.9ms)
+
+
+Started GET "/workers/new" for 127.0.0.1 at 2014-11-18 22:10:56 +0500
+Processing by WorkersController#new as HTML
+  [1m[35mUser Load (87.8ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered workers/_form.html.erb (2.7ms)
+  Rendered workers/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 264ms (Views: 173.5ms | ActiveRecord: 87.8ms)
+
+
+Started POST "/workers" for 127.0.0.1 at 2014-11-18 22:11:13 +0500
+Processing by WorkersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R3DZa9J5+/jnHOB2W1pJjpyOKI4PTbEwHjtZlTzVu4Y=", "worker"=>{"username"=>"John Wales", "card"=>"jwales"}, "commit"=>"Add employee"}
+  [1m[36mUser Load (387.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (184.2ms)[0m  BEGIN
+  [1m[36mSQL (176.8ms)[0m  [1mINSERT INTO `workers` (`card`, `created_at`, `customer`, `updated_at`, `username`) VALUES ('jwales', '2014-11-18 17:11:14', 1, '2014-11-18 17:11:14', 'John Wales')[0m
+  [1m[35m (454.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/workers/2
+Completed 302 Found in 1211ms (ActiveRecord: 1203.2ms)
+
+
+Started GET "/workers/2" for 127.0.0.1 at 2014-11-18 22:11:14 +0500
+Processing by WorkersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWorker Load (192.1ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (184.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered workers/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 562ms (Views: 182.9ms | ActiveRecord: 376.3ms)
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:12:01 +0500
+Processing by CheckInsController#index as HTML
+  [1m[36mUser Load (89.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCheckIn Load (87.9ms)[0m  SELECT `check_ins`.* FROM `check_ins`
+  [1m[36m (87.2ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35mWorker Load (89.1ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36m (86.3ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mReader Load (88.4ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36m (88.6ms)[0m  [1mSELECT COUNT(*) FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36m (409.4ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  Rendered check_ins/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 1192ms (Views: 154.0ms | ActiveRecord: 1026.1ms)
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:12:02 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (72.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (72.5ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35m (71.1ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mWorker Load (71.9ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  [1m[35m (70.8ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mReader Load (72.4ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35m (72.0ms)[0m  SELECT COUNT(*) FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35m (73.7ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  Rendered check_ins/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 741ms (Views: 153.1ms | ActiveRecord: 576.9ms)
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:12:03 +0500
+Processing by CheckInsController#index as HTML
+  [1m[36mUser Load (88.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCheckIn Load (88.7ms)[0m  SELECT `check_ins`.* FROM `check_ins`
+  [1m[36m (86.5ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35mWorker Load (87.1ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36m (87.1ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mReader Load (95.2ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36m (87.4ms)[0m  [1mSELECT COUNT(*) FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36m (390.4ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'[0m
+  Rendered check_ins/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 1187ms (Views: 164.7ms | ActiveRecord: 1010.6ms)
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:12:12 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (73.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (73.9ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35m (71.7ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mWorker Load (73.3ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  [1m[35m (71.4ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mReader Load (71.9ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35m (73.4ms)[0m  SELECT COUNT(*) FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35m (72.9ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  [1m[36m (73.4ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'jwales'[0m
+  [1m[35mWorker Load (84.7ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'jwales'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'jwales'
+  [1m[36m (73.5ms)[0m  [1mSELECT COUNT(*) FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'jwales'
+  Rendered check_ins/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 992ms (Views: 155.9ms | ActiveRecord: 813.4ms)
+
+
+Started GET "/permissions" for 127.0.0.1 at 2014-11-18 22:12:22 +0500
+Processing by PermissionsController#index as HTML
+  [1m[36mUser Load (73.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPermission Load (71.5ms)[0m  SELECT `permissions`.* FROM `permissions`
+  Rendered permissions/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 324ms (Views: 177.1ms | ActiveRecord: 144.7ms)
+
+
+Started GET "/permissions/new" for 127.0.0.1 at 2014-11-18 22:12:23 +0500
+Processing by PermissionsController#new as HTML
+  [1m[36mUser Load (88.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mWorker Load (89.0ms)[0m  SELECT `workers`.* FROM `workers`
+  [1m[36mReader Load (87.9ms)[0m  [1mSELECT `readers`.* FROM `readers`[0m
+  Rendered permissions/_form.html.erb (9.3ms)
+  Rendered permissions/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 443ms (Views: 171.4ms | ActiveRecord: 265.0ms)
+
+
+Started POST "/permissions" for 127.0.0.1 at 2014-11-18 22:12:29 +0500
+Processing by PermissionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R3DZa9J5+/jnHOB2W1pJjpyOKI4PTbEwHjtZlTzVu4Y=", "permission"=>{"user_id"=>"2", "reader_id"=>"1"}, "commit"=>"Create Permission"}
+  [1m[35mUser Load (73.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (89.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (73.7ms)[0m  INSERT INTO `permissions` (`created_at`, `customer`, `reader_id`, `updated_at`, `user_id`) VALUES ('2014-11-18 17:12:29', 1, 1, '2014-11-18 17:12:29', 2)
+  [1m[36m (82.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/permissions/1
+Completed 302 Found in 327ms (ActiveRecord: 319.2ms)
+
+
+Started GET "/permissions/1" for 127.0.0.1 at 2014-11-18 22:12:29 +0500
+Processing by PermissionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPermission Load (91.7ms)[0m  SELECT  `permissions`.* FROM `permissions`  WHERE `permissions`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (90.7ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mWorker Load (88.1ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`customer` = 1 AND `workers`.`id` = 2 LIMIT 1
+  [1m[36mReader Load (388.7ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`customer` = 1 AND `readers`.`id` = 1 LIMIT 1[0m
+  Rendered permissions/show.html.erb within layouts/application (479.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 842ms (Views: 179.3ms | ActiveRecord: 659.2ms)
+
+
+Started GET "/check_ins" for 127.0.0.1 at 2014-11-18 22:12:34 +0500
+Processing by CheckInsController#index as HTML
+  [1m[35mUser Load (114.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCheckIn Load (90.3ms)[0m  [1mSELECT `check_ins`.* FROM `check_ins`[0m
+  [1m[35m (86.9ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'
+  [1m[36mWorker Load (87.9ms)[0m  [1mSELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'admsmth'  ORDER BY `workers`.`id` ASC LIMIT 1[0m
+  [1m[35m (88.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mReader Load (86.8ms)[0m  [1mSELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35m (88.2ms)[0m  SELECT COUNT(*) FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmth'[0m
+  [1m[35m (87.8ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'admsmthi'
+  [1m[36m (88.3ms)[0m  [1mSELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'jwales'[0m
+  [1m[35mWorker Load (88.2ms)[0m  SELECT  `workers`.* FROM `workers`  WHERE `workers`.`card` = 'jwales'  ORDER BY `workers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `readers`.* FROM `readers`  WHERE `readers`.`serial` = 'abcd'  ORDER BY `readers`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `readers`  WHERE `readers`.`serial` = 'abcd'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `workers`  WHERE `workers`.`card` = 'jwales'
+  [1m[36m (94.0ms)[0m  [1mSELECT COUNT(*) FROM `permissions`  WHERE `permissions`.`reader_id` = 1 AND `permissions`.`user_id` = 2[0m
+  Rendered check_ins/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 1167ms (Views: 149.8ms | ActiveRecord: 1000.9ms)
