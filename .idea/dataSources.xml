@@ -9,10 +9,10 @@
     </data-source>
     <data-source source="LOCAL" name="Rails rails-rfid: production" uuid="9ca52874-37e6-4e61-94ef-51606ff00722">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/rfidlock_production</jdbc-url>
-      <user-name>dev</user-name>
-      <user-password>dfccdfcfdfcfdfc6dfdedfc2dfcfdfdadfc5dfdddfcfdfd8</user-password>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://91.239.26.200/rfidlock</jdbc-url>
+      <user-name>rfidlock</user-name>
+      <user-password>dfd8dfccdfc3dfcedfc6dfc5dfc9dfc1dfdadfcbdfd9dfd9</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails rails-rfid: default" uuid="cb7eb277-5413-4e60-b716-41adbf4def0a">
