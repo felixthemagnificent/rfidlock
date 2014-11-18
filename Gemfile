@@ -16,7 +16,6 @@ gem 'devise'
 gem 'simple_form'
 gem 'bootstrap_form'
 gem 'rails_layout'
-gem 'pg'
 gem 'unicorn'
 group :development do
   gem 'capistrano-rails', '~> 1.1.1'
