@@ -3,8 +3,10 @@
   <component name="DataSourceManagerImpl" format="xml" hash="1449246308">
     <data-source source="LOCAL" name="Rails rails-rfid: development" uuid="90d8fd3e-aa43-41dd-a87c-6a1be9baf0e9">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://91.239.26.200/rfidlock</jdbc-url>
+      <user-name>rfidlock</user-name>
+      <user-password>dfd8dfccdfc3dfcedfc6dfc5dfc9dfc1dfdadfcbdfd9dfd9</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails rails-rfid: production" uuid="9ca52874-37e6-4e61-94ef-51606ff00722">
@@ -25,10 +27,10 @@
     </data-source>
     <data-source source="LOCAL" name="Rails rails-rfid: test" uuid="3fc3ab4a-9fde-4576-a03b-9f2103845464">
       <driver-ref>postgresql</driver-ref>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/db/test.sqlite3</jdbc-url>
-      <user-name>&lt;user&gt;</user-name>
-      <user-password>df96dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf94</user-password>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://91.239.26.200/rfidlock</jdbc-url>
+      <user-name>rfidlock</user-name>
+      <user-password>dfd8dfccdfc3dfcedfc6dfc5dfc9dfc1dfdadfcbdfd9dfd9</user-password>
       <libraries />
     </data-source>
   </component>
