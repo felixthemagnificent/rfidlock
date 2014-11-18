@@ -15,13 +15,11 @@ gem 'devise'
 gem 'simple_form'
 gem 'bootstrap_form'
 gem 'rails_layout'
-gem 'capistrano'
-gem 'rvm-capistrano'
 gem 'pg'
 gem 'unicorn'
 group :development do
+  gem 'capistrano-rails', '~> 1.1.1'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
-
 end
