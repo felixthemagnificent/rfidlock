@@ -5,7 +5,7 @@ set :application, 'rfidlock'
 set :repo_url, 'git@github.com:felixthemagnificent/rfidlock.git'
 
 # Default branch is :master
- ask :branch, 'master' # proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
+ set :branch, 'master' # proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
  set :deploy_to, '/rails/railsapp'
