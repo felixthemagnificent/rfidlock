@@ -18,7 +18,9 @@ gem 'bootstrap_form'
 gem 'rails_layout'
 gem 'unicorn'
 group :development do
+  gem 'capistrano', '~> 3.2.1'
   gem 'capistrano-rails', '~> 1.1.1'
+  gem 'capistrano-unicorn-nginx', '~> 3.1.0'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
