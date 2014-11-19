@@ -17,6 +17,7 @@ role :db,  %w{deploy@91.239.26.200}
 
 server '91.239.26.200', user: 'deploy', roles: %w{web app}, my_property: :my_value
 
+set :nginx_server_name, 'rfidlock.rtsystems.ru'
 
 # Custom SSH Options
 # ==================
