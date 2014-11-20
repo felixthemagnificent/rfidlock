@@ -60,17 +60,17 @@ class CheckInsController < ApplicationController
     reader_serial = params[:reader];
     CheckIn.create(:card_user => card_serial, :readerSerial => reader_serial)
 
-    user_id = Worker.where(:card => card_serial)
-    reader_id = Reader.where(:serial => reader_serial)
+    user_id = Worker.where(:card => card_serial).first
+    reader_id = Reader.where(:serial => reader_serial).first
     unless user_id.nil? or reader_id.nil?
-      @perm = Permission.where(:user_id => user_id, :reader_id => reader_id)
+      @perm = Permission.where(:user_id => user_id.id, :reader_id => reader_id.id).first
       unless @perm.nil?
         render text: "YES"
+      else
+        render text: "NO"
       end
     end
-    if user_id.nil? or reader_id.nil?
-      render text: "NO"
-    end
+
     #respond_with(@check_in)
     #@check_in.delete
   end
