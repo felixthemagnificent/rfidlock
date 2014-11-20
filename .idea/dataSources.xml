@@ -28,7 +28,7 @@
     <data-source source="LOCAL" name="Rails rails-rfid: test" uuid="3fc3ab4a-9fde-4576-a03b-9f2103845464">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://91.239.26.200/rfidlock</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/rfidlock</jdbc-url>
       <user-name>rfidlock</user-name>
       <user-password>dfd8dfccdfc3dfcedfc6dfc5dfc9dfc1dfdadfcbdfd9dfd9</user-password>
       <libraries />

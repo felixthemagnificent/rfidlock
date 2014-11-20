@@ -65,11 +65,11 @@ class CheckInsController < ApplicationController
     unless user_id.nil? or reader_id.nil?
       @perm = Permission.where(:user_id => user_id, :reader_id => reader_id)
       unless @perm.nil?
-        render json: @perm
+        render text: "YES"
       end
     end
     if user_id.nil? or reader_id.nil?
-      render json: nil
+      render text: "NO"
     end
     #respond_with(@check_in)
     #@check_in.delete

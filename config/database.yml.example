@@ -14,15 +14,18 @@ development:
   database: rfidlock
   username: rfidlock
   password: rfidlockpass
-  host: 91.239.26.200
+  host: 127.0.0.1
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: db/test.sqlite3
+  adapter: mysql2
+  database: rfidlock
+  username: rfidlock
+  password: rfidlockpass
+  host: localhost
 
 production:
   adapter: mysql2
