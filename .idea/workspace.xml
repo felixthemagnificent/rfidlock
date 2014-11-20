@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="185fdc2f-8521-46de-a1ec-38cd0362a1b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/check_ins/index.html.erb" afterPath="$PROJECT_DIR$/app/views/check_ins/index.html.erb" />
-    </list>
+    <list default="true" id="185fdc2f-8521-46de-a1ec-38cd0362a1b5" name="Default" comment="" />
     <ignored path="rails-rfid.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
