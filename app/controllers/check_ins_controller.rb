@@ -46,7 +46,7 @@ class CheckInsController < ApplicationController
 
 
     }
-
+    @resp.reverse!
     respond_with(@resp)
   end
 
