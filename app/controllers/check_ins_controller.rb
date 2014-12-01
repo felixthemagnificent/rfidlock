@@ -10,37 +10,36 @@ class CheckInsController < ApplicationController
     check_ins.each { |checkin|
       ss = Hash.new
       username = checkin.card_user
-      uname = Worker.where(card: username)
-      if not uname.nil? || uname.empty?
-        ss[:name] = uname.first.username
+      uname = Worker.where(card: username).first
+      unless uname.nil?
+        ss[:name] = uname.username
       else
         ss[:name] = 'Unknown'
       end
 
-      ulocation =  Reader.where(serial: checkin.readerSerial)
-      if not ulocation.empty? || ulocation.nil?
-        ss[:location] = ulocation.first.desc
+      ulocation =  Reader.where(serial: checkin.readerSerial).first
+      if not ulocation.nil?
+        ss[:location] = ulocation.desc
       else
         ss[:location] = 'Unregistered reader'
       end
       ss[:time] = checkin.created_at
       ss[:style] = 'danger'
       perm = nil
-      unless ulocation.empty? || ulocation.nil?
-
-        unless uname.empty? || uname.nil?
-        perm = Permission.where(reader_id: ulocation.first.id, user_id: uname.first.id)
-        unless perm.nil? || perm.empty?
-          ss[:style] = 'success'
-        else if not uname.empty?
-          ss[:style] = 'warning'
+      unless ulocation.nil?
+        unless uname.nil?
+          perm = Permission.where(reader_id: ulocation.id, worker_id: uname.id).first
+          unless perm.nil?
+              ss[:style] = 'success'
+          else
+            unless uname.nil?
+                ss[:style] = 'warning'
+            end
           end
         end
-        end
-
       end
 
-      if ulocation.first.customer == current_user.id
+      if ulocation.user == current_user
         @resp.push(ss)
       end
 
@@ -57,22 +56,18 @@ class CheckInsController < ApplicationController
 
   def auth
     card_serial = params[:card]
-    reader_serial = params[:reader];
+    reader_serial = params[:reader]
     CheckIn.create(:card_user => card_serial, :readerSerial => reader_serial)
 
-    user_id = Worker.where(:card => card_serial).first
-    reader_id = Reader.where(:serial => reader_serial).first
-    unless user_id.nil? or reader_id.nil?
-      @perm = Permission.where(:user_id => user_id.id, :reader_id => reader_id.id).first
+    worker = Worker.where(:card => card_serial).first
+    reader = Reader.where(:serial => reader_serial).first
+    unless worker.nil? or reader.nil?
+      @perm = Permission.where(:worker_id => worker.id, :reader_id => reader.id).first
       unless @perm.nil?
         render text: "YES"
-      else
-        render text: "NO"
       end
     end
-
-    #respond_with(@check_in)
-    #@check_in.delete
+    render text: "NO"
   end
 
   def edit

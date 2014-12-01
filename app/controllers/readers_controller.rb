@@ -4,7 +4,7 @@ class ReadersController < ApplicationController
   respond_to :html
 
   def index
-    @readers = Reader.all.where(:customer => current_user.id)
+    @readers = Reader.all.where(:user => current_user)
     respond_with(@readers)
   end
 
@@ -14,7 +14,7 @@ class ReadersController < ApplicationController
 
   def new
     @reader = Reader.new
-    @reader.customer = current_user.id
+    @reader.user = current_user
     respond_with(@reader)
   end
 
@@ -23,13 +23,13 @@ class ReadersController < ApplicationController
 
   def create
     @reader = Reader.new(reader_params)
-    @reader.customer = current_user.id
+    @reader.user = current_user
     @reader.save
     respond_with(@reader)
   end
 
   def update
-    @reader.customer = current_user.id
+    @reader.user = current_user
     @reader.update(reader_params)
     respond_with(@reader)
   end
@@ -42,7 +42,7 @@ class ReadersController < ApplicationController
   private
     def set_reader
       @reader = Reader.find(params[:id])
-      @reader.customer = current_user.id
+      @reader.user = current_user
     end
 
     def reader_params

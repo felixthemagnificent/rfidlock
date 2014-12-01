@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails rails-rfid: development" uuid="90d8fd3e-aa43-41dd-a87c-6a1be9baf0e9">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://91.239.26.200/rfidlock</jdbc-url>
+      <jdbc-url>jdbc:mysql://rtsystems.ru:3306/rfidlock</jdbc-url>
       <user-name>rfidlock</user-name>
       <user-password>dfd8dfccdfc3dfcedfc6dfc5dfc9dfc1dfdadfcbdfd9dfd9</user-password>
       <libraries />

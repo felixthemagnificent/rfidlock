@@ -2,7 +2,7 @@
   <div class="col-xs-6">
   <%= bootstrap_form_for(@permission) do |f| %>
 
- <%= f.select :user_id, @workers %>
+ <%= f.select :worker_id, @workers %>
  <%= f.select :reader_id, @readers %>
     <%= f.form_group do %>
         <div class="btn-group">

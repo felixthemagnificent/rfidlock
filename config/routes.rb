@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :readers
+
+
+  resources :readers do
+    resources :options
+  end
 
   resources :permissions
 

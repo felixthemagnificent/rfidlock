@@ -4,7 +4,7 @@ class WorkersController < ApplicationController
   respond_to :html
 
   def index
-    @workers = Worker.all.where(:customer => current_user.id)
+    @workers = Worker.all.where(:user => current_user)
     respond_with(@workers)
   end
 
@@ -14,7 +14,7 @@ class WorkersController < ApplicationController
 
   def new
     @worker = Worker.new
-    @worker.customer = current_user.id
+    @worker.user = current_user
     respond_with(@worker)
   end
 
@@ -23,13 +23,13 @@ class WorkersController < ApplicationController
 
   def create
     @worker = Worker.new(worker_params)
-    @worker.customer = current_user.id
+    @worker.user = current_user
     flash[:notice] = 'Worker was successfully created.' if @worker.save
     respond_with(@worker)
   end
 
   def update
-    @worker.customer = current_user.id
+    @worker.user = current_user
     flash[:notice] = 'Worker was successfully updated.' if @worker.update(worker_params)
     respond_with(@worker)
   end
@@ -42,7 +42,7 @@ class WorkersController < ApplicationController
   private
     def set_worker
       @worker = Worker.find(params[:id])
-      unless @worker.customer == current_user.id
+      unless @worker.user == current_user
         @worker = nil
       end
     end

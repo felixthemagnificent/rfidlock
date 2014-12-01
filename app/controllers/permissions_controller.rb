@@ -7,12 +7,12 @@ class PermissionsController < ApplicationController
     @permissions = Array.new
     Permission.all.each { |perm|
       s = Hash.new
-      uid = perm.user_id
+      uid = perm.worker_id
       rid = perm.reader_id
       s[:user] = Worker.find(uid)
       s[:location] = Reader.find(rid)
       s[:permission] = perm
-      if perm.customer == current_user.id
+      if perm.user == current_user
         @permissions.push(s)
       end
     }
@@ -21,8 +21,8 @@ class PermissionsController < ApplicationController
   end
 
   def show
-    @workers = Worker.all.where(:customer => current_user.id)
-    @readers = Reader.all.where(:customer => current_user.id)
+    @workers = Worker.all.where(:user => current_user)
+    @readers = Reader.all.where(:user => current_user)
     respond_with(@permission,@workers,@readers)
   end
 
@@ -33,7 +33,7 @@ class PermissionsController < ApplicationController
       tmp = Array.new
       tmp.push(wrk.username)
       tmp.push(wrk.id)
-      if wrk.customer == current_user.id
+      if wrk.user == current_user
         @workers.push(tmp)
       end
     }
@@ -44,12 +44,12 @@ class PermissionsController < ApplicationController
       tmp = Array.new
       tmp.push(rdr.desc)
       tmp.push(rdr.id)
-      if rdr.customer == current_user.id
+      if rdr.user == current_user
         @readers.push(tmp)
       end
     }
     @permission = Permission.new
-    @permission.customer = current_user.id
+    @permission.user = current_user
     respond_with(@permission, @workers, @readers)
   end
 
@@ -60,7 +60,7 @@ class PermissionsController < ApplicationController
       tmp = Array.new
       tmp.push(wrk.username)
       tmp.push(wrk.id)
-      if wrk.customer == current_user.id
+      if wrk.user == current_user
         @workers.push(tmp)
       end
     }
@@ -71,7 +71,7 @@ class PermissionsController < ApplicationController
       tmp = Array.new
       tmp.push(rdr.desc)
       tmp.push(rdr.id)
-      if wrk.customer == current_user.id
+      if rdr.user == current_user
         @readers.push(tmp)
       end
     }
@@ -80,13 +80,13 @@ class PermissionsController < ApplicationController
 
   def create
     @permission = Permission.new(permission_params)
-    @permission.customer = current_user.id
+    @permission.user = current_user
     @permission.save
     respond_with(@permission)
   end
 
   def update
-    @permission.customer = current_user.id
+    @permission.user = current_user
     @permission.update(permission_params)
     respond_with(@permission)
   end
@@ -102,6 +102,6 @@ class PermissionsController < ApplicationController
     end
 
     def permission_params
-      params.require(:permission).permit(:user_id, :reader_id)
+      params.require(:permission).permit(:worker_id, :reader_id)
     end
 end
