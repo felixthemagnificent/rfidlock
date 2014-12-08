@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resources :options
   end
 
+  get 'startpage', to: 'startpage#index'
+
   resources :permissions
 
   resources :workers
@@ -12,7 +14,7 @@ Rails.application.routes.draw do
   get 'checkin', to: 'check_ins#auth'
   resources :check_ins
 
-  root to: 'check_ins#index'
+  root to: 'startpage#index'
   devise_for :users
   resources :users
 end

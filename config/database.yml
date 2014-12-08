@@ -33,4 +33,3 @@ production:
   username: rfidlock
   password: rfidlockpass
   host: 91.239.26.200
-  socket: /tmp/mysql.sock

@@ -37,11 +37,12 @@ class CheckInsController < ApplicationController
             end
           end
         end
+        if ulocation.user == current_user
+          @resp.push(ss)
+        end
       end
 
-      if ulocation.user == current_user
-        @resp.push(ss)
-      end
+
 
 
     }
@@ -58,16 +59,18 @@ class CheckInsController < ApplicationController
     card_serial = params[:card]
     reader_serial = params[:reader]
     CheckIn.create(:card_user => card_serial, :readerSerial => reader_serial)
-
+    render_text = ""
     worker = Worker.where(:card => card_serial).first
     reader = Reader.where(:serial => reader_serial).first
     unless worker.nil? or reader.nil?
       @perm = Permission.where(:worker_id => worker.id, :reader_id => reader.id).first
       unless @perm.nil?
-        render text: "YES"
+        render_text = "YES"
+      else
+        render_text = "NO"
       end
     end
-    render text: "NO"
+    render :text => render_text
   end
 
   def edit
