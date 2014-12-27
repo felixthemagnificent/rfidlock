@@ -4,9 +4,9 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{deploy@91.239.26.200}
-role :web, %w{deploy@91.239.26.200}
-role :db,  %w{deploy@91.239.26.200}
+role :app, %w{deploy@rtsystems.ru}
+role :web, %w{deploy@rtsystems.ru}
+role :db,  %w{deploy@rtsystems.ru}
 
 
 # Extended Server Syntax
@@ -15,7 +15,7 @@ role :db,  %w{deploy@91.239.26.200}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server '91.239.26.200', user: 'deploy', roles: %w{web app}, my_property: :my_value
+#server '91.239.26.200', user: 'deploy', roles: %w{web app}, my_property: :my_value
 
 set :nginx_server_name, 'rfidlock.rtsystems.ru'
 
@@ -34,13 +34,13 @@ set :nginx_server_name, 'rfidlock.rtsystems.ru'
 #
 # And/or per server (overrides global)
 # ------------------------------------
-server '91.239.26.200',
-   user: 'deploy',
-   roles: %w{web app},
-   ssh_options: {
-     user: 'deploy', # overrides user setting above
-     #keys: %w(/home/user_name/.ssh/id_rsa),
-     forward_agent: false,
-     auth_methods: %w(password),
-     password: 'felix'
-   }
+#server '91.239.26.200',
+#   user: 'deploy',
+#   roles: %w{web app},
+#   ssh_options: {
+#     user: 'deploy', # overrides user setting above
+#     #keys: %w(/home/user_name/.ssh/id_rsa),
+#     forward_agent: false,
+#     auth_methods: %w(password),
+#     password: 'felix'
+#   }
