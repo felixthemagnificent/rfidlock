@@ -4,9 +4,9 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{deploy@rtsystems.ru}
-role :web, %w{deploy@rtsystems.ru}
-role :db,  %w{deploy@rtsystems.ru}
+role :app, %w{cap@192.168.111.22}
+role :web, %w{cap@192.168.111.22}
+role :db,  %w{cap@192.168.111.22}
 
 
 # Extended Server Syntax
@@ -17,7 +17,7 @@ role :db,  %w{deploy@rtsystems.ru}
 
 #server '91.239.26.200', user: 'deploy', roles: %w{web app}, my_property: :my_value
 
-set :nginx_server_name, 'rfidlock.rtsystems.ru'
+set :nginx_server_name, 'lock.rtsystems.ru'
 
 # Custom SSH Options
 # ==================
