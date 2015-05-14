@@ -196,7 +196,7 @@ img {
   padding-top: 67px;
 }
 #intro .overlay {
-  background: url("bg-overlay.png") rgba(0, 0, 0, 0.6) repeat;
+  background: image-url("bg-overlay.png") rgba(0, 0, 0, 0.6) repeat;
 }
 #intro .main-text {
   margin: 202px 0px;
@@ -274,7 +274,7 @@ img {
   color: #fff;
 }
 #about {
-  background: url('bg-1.jpg') center center no-repeat;
+  background: image-url('bg-1.jpg') center center no-repeat;
   background-size: cover;
   color: #ffffff;
 }
@@ -455,7 +455,7 @@ img {
   color: #008A7D;
 }
 #why-chose {
-  background: url('bg-2.jpg') center center no-repeat;
+  background: image-url('bg-2.jpg') center center no-repeat;
   color: #fff;
   background-size: cover;
   overflow: hidden;
@@ -828,7 +828,7 @@ img {
   background: #CC181E;
 }
 #testimonial {
-  background: url('bg-2.jpg') center center no-repeat;
+  background: image-url('bg-2.jpg') center center no-repeat;
   background-size: cover;
 }
 #testimonial .testimonial {
