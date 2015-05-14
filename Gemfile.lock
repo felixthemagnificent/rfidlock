@@ -27,6 +27,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    animate-rails (1.0.8)
+      rails
     arel (5.0.1.20140414130214)
     autoprefixer-rails (5.1.11)
       execjs
@@ -78,6 +80,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.5.2)
+    font-awesome-sass (4.3.2.1)
+      sass (~> 3.2)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.2.13)
@@ -88,6 +92,8 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.2)
     kgio (2.9.3)
+    lightbox2-rails (2.7.1)
+      railties (>= 3.1)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.5)
@@ -97,7 +103,10 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
+    normalize-rails (3.0.3)
     orm_adapter (0.5.0)
+    owlcarousel-rails (1.1.3.3)
+      jquery-rails
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.5.3)
@@ -167,11 +176,13 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.3)
       rack (>= 1.0)
+    wow-rails (0.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  animate-rails
   better_errors
   binding_of_caller
   bootstrap-sass
@@ -182,9 +193,13 @@ DEPENDENCIES
   capistrano-unicorn-nginx
   coffee-rails (~> 4.0.0)
   devise
+  font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails
+  lightbox2-rails
   mysql2
+  normalize-rails
+  owlcarousel-rails
   quiet_assets
   rails (= 4.1.7)
   rails_layout
@@ -196,3 +211,4 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   unicorn
+  wow-rails

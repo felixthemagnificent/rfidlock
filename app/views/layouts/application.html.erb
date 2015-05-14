@@ -5,18 +5,39 @@
     <title><%= content_for?(:title) ? yield(:title) : "Rails Rfid" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Rfid" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <!-- Bootstrap  -->
+<%= stylesheet_link_tag 'style' %>
+<%= stylesheet_link_tag 'responsive' %>
+<%= stylesheet_link_tag 'owl.theme' %>
+<%= stylesheet_link_tag 'owl.transitions' %>
+
+
+
+
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+    
+    <%= javascript_include_tag 'jquery.mixitup' %>
+    <%= javascript_include_tag 'scroll-top' %>
+    <%= javascript_include_tag 'smooth-scroll' %>
+    <%= javascript_include_tag 'style.changer' %>
+   
+    <%= javascript_include_tag 'modernizr-2.8.0.main' %>
+
+
+    <%= javascript_include_tag 'main' %>
     <%= csrf_meta_tags %>
   </head>
   <body>
 
-    <header>
+
       <%= render 'layouts/navigation' %>
-    </header>
-    <div class="container">
+
+    
        <%= render 'layouts/messages' %>
 
        <%= yield %>
-    </div>
+    
   </body>
 </html>

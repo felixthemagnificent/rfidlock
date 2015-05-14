@@ -13,4 +13,13 @@
  *= require_tree .
  *= require_self
  *= require rails_bootstrap_forms
+ *= require normalize-rails
+ *= require lightbox
+ *= require animate
+ *= require owl.carousel
+ *= require owl.theme
+
  */
+
+ @import "font-awesome-sprockets";
+ @import "font-awesome";

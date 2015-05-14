@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20141130041709) do
     t.datetime "updated_at"
   end
 
-  add_index "options", ["reader_id"], name: "index_options_on_reader_id", using: :btree
+  add_index "options", ["reader_id"], name: "index_options_on_reader_id"
 
   create_table "permissions", force: true do |t|
     t.integer  "worker_id"
@@ -63,8 +63,8 @@ ActiveRecord::Schema.define(version: 20141130041709) do
     t.string   "card"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
   create_table "workers", force: true do |t|
     t.string   "card"
